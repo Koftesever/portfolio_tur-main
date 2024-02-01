@@ -29,7 +29,7 @@
     <main class="main">
       <!-- Önizleme bölümü -->
       <section class="main__home home" id="home">
-        <h1 class="home__title">NAME SURNAME</h1>
+        <h1 class="home__title">EFE GÜNER</h1>
         <p class="home__subtitle">WEB-DEVELOPER, PYTHON PROGRAMMER</p>
       </section>
       <!-- Hakkımda bölümü -->
@@ -38,8 +38,8 @@
         <div class="about__info info-block">
           <p class="info-block__text">
               Ben Necmettin Efe Güner, Python kullanarak web sitesi uygulamaları yapabiliyorum.
-            Aynı zamanda html hakkında bilgim var. Python'ı kullanarak Discord botları yapabiliyorum.
-            Hala bu konularda kendimi geliştirmeye gayret ediyorum.
+            Ayrıca html hakkında bilgim var. Python'ı kullanarak Discord botları yapabiliyorum.
+            Aynı zamanda veri tabanı hakkında projelerim var. Hala bu konularda kendimi geliştirmeye gayret ediyorum.
           </p>
           <img
             class="info-block__img"
@@ -109,10 +109,21 @@
         
         {% elif button_discord%}
           <div class="skills__project project" id="project">
-            <img class=""
+              <img class="project__img" src="../static/img/discord_skill.png" alt="project" width="500">
+              <a class="project_link" href="https://github.com/Koftesever/bot0.py/tree/main">GitHub'da aç</a>
           </div>
+
+        {% elif button_html%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/html_skill.png" alt="project" width="500">
+              <a class="project_link" href="https://github.com/Koftesever/Hayvanlar">GitHub'da aç</a>
+          </div>
+        {% elif button_db%}
+        <div class="skills__project project" id="project">
+            <img class="project__img" src="../static/img/db_skill.png" alt="project" width="500">
+            <a class="project_link" href="https://github.com/Koftesever/diary-tur-main">GitHub'da aç</a>
+        </div>
         {% endif %}
-          <div class="project__img" src
       </section>
       <!-- Geri bildirim formu -->
       <section class="main__feedback feedback" id="feedback">
