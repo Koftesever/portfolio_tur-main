@@ -23,11 +23,11 @@ def process_form():
                             button_discord=button_discord,
                             button_html=button_html,
                             button_db=button_db)
-@app.route('/')
+@app.route('/index')
 def feedback():
     email=request.form.get('email')
     text=request.form.get('text')
-    return render_template('index.html',
+    return render_template('feedback.html',
                            email=email,
                            text=text)
 
